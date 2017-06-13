@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name='viewport' content='width=device-width,  initial-scale=1'>
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link rel='stylesheet' href='style.css'>
+  
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class='navbar navbar-default'>
+  <div class='container-fluid'>
+	<div class='navbar-header'>
+	  <a class='navbar-brand' href='#'>Unknown Project</a>
+	</div>
+	<ul class='nav navbar-nav'>
+		<li class = 'tablink active' id = 'tab_home'><a href='#'>Home</a></li>
+		<li class = 'tablink' id = 'tab_setting'><a href='#'>Setting</a></li>
+		<li class = 'tablink' id = 'tab_report'><a href='#'>Report</a></li>
+		<li class = 'tablink' id = 'tab_about'><a href='#'>About</a></li>
+	</ul>
+	<!-- Mode Switch
+	<ul class='nav navbar-nav'>   
+		<li class='active'>
+	  <label class='switch'>
+		<input type='checkbox'>
+		<div class='slider round'></div>
+	  </label>
+	<li>
+	</ul>
+	-->
+  </div>
+</nav>
+
+<!-- Content -->
+<!-- Home -->
+
+<div id = 'front_home' class = 'jumbotron text-center tabcontent' style = 'display: block'>
+	<h1>Block Site</h1>
+	<p>Test Page</p>
+	<form class='form-inline'>
+		<div class='input-group'>
+		  <input type='text' class='form-control urlIn' size='50' placeholder='www.' value='www.' >
+		  <div class='input-group-btn'>
+				<button type='button' class='btn btn-primary urlSubmit'>Add Page</button>
+			</div>
+			<div class='input-group-btn'>
+				<button type='button' class='btn btn-primary clear'>Reset</button>
+			</div>
+		</div>
+  </form>
+  <!-- For Test Use -->
+	<div class = 'displayList' > </div>
+</div>
+
+<!-- Settings -->
+<div id = 'front_setting' class = 'tabcontent'>
+	<p> SETTINGS </p>
+  <div class = 'container displayList'> </div>
+</div>
+<!-- Report -->
+<div id = 'front_report' class = 'tabcontent'>
+	<p> REPORT PAGE </p> 
+</div>
+<!-- About -->
+<div id = 'front_about' class = 'tabcontent'> 
+	<p> ABOUT PAGE </p>
+</div>
+
+
+<script src = 'js/options.js'> </script>
+</body>
+</html>
